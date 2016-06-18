@@ -72,10 +72,9 @@ a {
 
 @media only screen and (max-width: 767px){
 
-.hideRes {
-    display: none;
-}
-
+    .hideRes {
+        display: none;
+    }
 }
 
 /************ doc Page *************************/
@@ -89,14 +88,21 @@ a {
 
 /* insert box */
 .insert-thumb {
-    position: relative;
     height: 170px;
     background-color: #cfcfcf;
+    border-radius: 10px;
+    border: 15px solid #cfcfcf;
+}
+
+.drop {
+    position: relative;
+    height: 140px;
+    border: 2px dashed #efefef;
     border-radius: 10px;
 }
 
 h5 {
-    padding-top: 50px; 
+    padding-top: 30px; 
     text-transform: none;
     color: #3b3b3b;
 }
@@ -157,5 +163,23 @@ select {
 
 .back:hover {
     border: 2px solid #1E8BC3;
+    color: #1E8BC3;
+}
+
+/************ footer *************************/
+footer ul {
+    padding: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+footer li a {
+    color: #3b3b3b;
+}
+
+footer li a:hover {
     color: #1E8BC3;
 }
