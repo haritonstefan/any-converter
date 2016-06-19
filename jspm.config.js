@@ -16,6 +16,7 @@ System.config({
   map: {
     "angular": "github:angular/bower-angular@1.5.6",
     "angular-bootstrap": "github:angular-ui/bootstrap-bower@1.3.3",
+    "angular-loading-bar": "github:chieffancypants/angular-loading-bar@0.9.0",
     "angular-ui-router": "github:angular-ui/angular-ui-router-bower@0.3.1",
     "angular-ui/bootstrap-bower": "github:angular-ui/bootstrap-bower@1.3.3",
     "babel": "npm:babel-core@5.8.38",
