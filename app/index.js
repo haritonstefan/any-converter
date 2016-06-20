@@ -6,6 +6,7 @@ import 'angular';
 import 'angular-ui-router';
 import 'angular-bootstrap';
 import 'angular-ui/bootstrap-bower';
+import 'angular-loading-bar';
 import 'css';
 import './home/index';
 import './convert-document/index';
@@ -15,4 +16,5 @@ angular.module(moduleName, [
   'home',
   'convert-document',
   'ui.bootstrap',
+  'angular-loading-bar',
 ]);
