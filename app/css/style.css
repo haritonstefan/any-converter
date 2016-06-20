@@ -107,19 +107,22 @@ h5 {
     color: #3b3b3b;
 }
 
-.upFile {
-    font-size: 20px;
-    background-color: #1E8BC3;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #1E8BC3;
-    text-transform: uppercase;
+/* choose file */
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
 }
-
-.upFile:hover {
-    border: 2px solid #cfcfcf;
-    color: #cfcfcf;
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 /* convert type box */
