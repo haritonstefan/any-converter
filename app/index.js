@@ -8,6 +8,7 @@ import 'angular-bootstrap';
 import 'angular-ui/bootstrap-bower';
 import 'angular-loading-bar';
 import 'angular-modal-service';
+import 'angular-modal-service'
 import 'css';
 import './home/index';
 import './convert-document/index';
@@ -19,4 +20,5 @@ angular.module(moduleName, [
   'angularModalService',
   'ui.bootstrap',
   'angular-loading-bar',
+  'angularModalService'
 ]);
