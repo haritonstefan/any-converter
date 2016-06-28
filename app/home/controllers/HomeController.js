@@ -9,7 +9,7 @@ import name from '../name';
 
 class HomeController{
   constructor() {
-    console.log('we are home');
+  	
   }
 }
 
