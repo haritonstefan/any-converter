@@ -9,7 +9,7 @@ import name from '../name';
 
 class ConvertDocumentCtrl{
   constructor() {
-    console.log('We have to convert docs!');
+  	
   }
 }
 

@@ -8,14 +8,22 @@
 import name from '../name';
 
 class HomeController{
-  constructor() {
-    console.log('we are home');
+  constructor(ModalService) {
+    this.modal = ModalService;
+  }
+
+  show(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/modal.tpl.html',
+      controller: 'FAQModalController'
+    })
   }
 }
 
 export default HomeController
 
 angular.module(name).controller('HomeController', [
+    '$uibModal',
   (...args) => {
     return new HomeController(...args);
   }

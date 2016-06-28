@@ -3,3 +3,4 @@
  */
 
 import './HomeController';
+import './modals/FAQModalController';

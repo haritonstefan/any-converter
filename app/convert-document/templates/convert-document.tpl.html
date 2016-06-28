@@ -1,3 +1,7 @@
+<!-- -->
+<!-- Created by Siumbeli Vladislav on Jun 14, 2016. -->
+<!-- -->
+
 <div class="container">
 	<h1>Document Converter</h1>
 
@@ -19,13 +23,17 @@
 
 		<div class="square col-sm-8">
 	        <div class="insert-thumb">
-	        	<div class="drop">
-	            	<h5>Drop you file here...</h5>
-	            	<div class="fileUpload btn btn-primary">
-    					<span>Choose file</span>
-    					<input type="file" class="upload" />
-					</div>
-	        	</div>
+
+	            <div class="box">
+					<input type="file" name="file[]" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+					<label for="file">
+						<figure>
+							<img src="app/img/adddoc.png">
+						</figure> 
+						<span>Choose a file&hellip;</span>
+					</label>
+				</div> 
+
 	        </div>
 	    </div>
 
@@ -89,11 +97,11 @@
     <div class="row">
         <div class="col-sm-12">
             <ul>
-                <li><a href="#">faq</a></li>
-                <li><a href="#">terms of service</a></li>
-                <li><a href="#">privacy</a></li>
-                <li><a href="#">security</a></li>
-                <li><a href="#">support</a></li>
+                <li><a ui-sref="#">faq</a></li>
+                <li><a ui-sref="#">terms of service</a></li>
+                <li><a ui-sref="#">privacy</a></li>
+                <li><a ui-sref="#">security</a></li>
+                <li><a ui-sref="#">support</a></li>
             </ul>
         </div>
     </div>
