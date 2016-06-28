@@ -194,6 +194,7 @@ footer ul {
 footer ul li {
     display: inline-block;
     padding: 20px;
+    cursor:pointer;
 }
 
 footer li a {
@@ -202,4 +203,49 @@ footer li a {
 
 footer li a:hover {
     color: #1E8BC3;
+}
+
+
+/************ modals *************************/
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #1E8BC3;
+    height: 70px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal-title {
+    color: #ffffff;
+    text-transform: none;
+}
+
+.modal-body {
+    height: 400px;
+    overflow: scroll;
+    background-color: #efefef;
+}
+
+.modal-body p {
+    color: #3b3b3b;
+    text-transform: none;
+}
+
+.modal-footer {
+    background-color: #1E8BC3;
+    height: 70px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.closeBut {
+    color: #3b3b3b;
+}
+
+.closeBut:hover {
+    background-color: #0c6b9b;
+    border-color: #0c6b9b;
+    color: #ffffff;
 }
