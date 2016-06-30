@@ -7,16 +7,16 @@
 
 import name from '../../name';
 
-class SeCModalController{
+class privacyModalController{
     constructor(close) {
         this.close = close
     }
 }
 
-export default SeCModalController
+export default privacyModalController
 
-angular.module(name).controller('SeCModalController', [
+angular.module(name).controller('privacyModalController', [
     (...args) => {
-        return new SeCModalController(...args);
+        return new privacyModalController(...args);
     }
 ]);

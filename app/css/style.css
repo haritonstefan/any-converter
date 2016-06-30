@@ -84,13 +84,6 @@ a {
     text-decoration: none !important;
 }
 
-@media only screen and (max-width: 767px){
-
-    .hideRes {
-        display: none;
-    }
-}
-
 /************ doc Page *************************/
 
 /* advertise thumb */
@@ -142,7 +135,7 @@ figure {
     background-color: #0c6b9b;
 }
 
-/* convert type box */
+/* choose type box */
 label {
     margin-right: 10px; 
 }
@@ -186,7 +179,8 @@ select {
     color: #1E8BC3;
 }
 
-/************ footer *************************/
+/************ footer ***************************/
+
 footer ul {
     padding: 20px;
 }
@@ -206,7 +200,8 @@ footer li a:hover {
 }
 
 
-/************ modals *************************/
+/************ modals ***************************/
+
 .modal-content {
     border-radius: 15px;
     border: none;
@@ -248,4 +243,17 @@ footer li a:hover {
     background-color: #0c6b9b;
     border-color: #0c6b9b;
     color: #ffffff;
+}
+
+/************ responsivenes ********************/
+
+@media only screen and (max-width: 767px){
+
+    .hideRes {
+        display: none;
+    }
+
+    .modal-title {
+        font-size: 30px;
+    }
 }

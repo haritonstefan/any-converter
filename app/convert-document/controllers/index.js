@@ -3,8 +3,8 @@
  */
 
 import './DocumentConvertController';
-import '/app/home/controllers/modals/FAQModalController';
-import '/app/home/controllers/modals/ToSModalController';
-import '/app/home/controllers/modals/PrIModalController';
-import '/app/home/controllers/modals/SeCModalController';
-import '/app/home/controllers/modals/SupModalController';
+import '../../home/controllers/modals/faqModalController';
+import '../../home/controllers/modals/privacyModalController';
+import '../../home/controllers/modals/securityModalController';
+import '../../home/controllers/modals/supportModalController';
+import '../../home/controllers/modals/termsOfserviceModalController';

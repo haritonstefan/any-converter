@@ -7,16 +7,16 @@
 
 import name from '../../name';
 
-class SuPModalController{
+class supportModalController{
     constructor(close) {
         this.close = close
     }
 }
 
-export default SuPModalController
+export default supportModalController
 
-angular.module(name).controller('SuPModalController', [
+angular.module(name).controller('supportModalController', [
     (...args) => {
-        return new SuPModalController(...args);
+        return new supportModalController(...args);
     }
 ]);

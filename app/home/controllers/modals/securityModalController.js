@@ -7,16 +7,16 @@
 
 import name from '../../name';
 
-class PrIModalController{
+class securityModalController{
     constructor(close) {
         this.close = close
     }
 }
 
-export default PrIModalController
+export default securityModalController
 
-angular.module(name).controller('PrIModalController', [
+angular.module(name).controller('securityModalController', [
     (...args) => {
-        return new PrIModalController(...args);
+        return new securityModalController(...args);
     }
 ]);

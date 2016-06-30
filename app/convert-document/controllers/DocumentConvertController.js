@@ -12,46 +12,47 @@ class ConvertDocumentCtrl{
     this.modal = ModalService;
   }
 
-  showFaQ(){
+  showFaq(){
     this.modal.open({
       templateUrl: '/app/home/templates/faqModal.tpl.html',
-      controller: 'FAQModalController'
+      controller: 'faqModalController'
     })
   }
 
-  showToS(){
+  showTermsOfservice(){
     this.modal.open({
-      templateUrl: '/app/home/templates/tosModal.tpl.html',
-      controller: 'ToSModalController'
+      templateUrl: '/app/home/templates/termsOfserviceModal.tpl.html',
+      controller: 'termsOfserviceModalController'
     })
   }
 
-  showPrI(){
+  showPrivacy(){
     this.modal.open({
-      templateUrl: '/app/home/templates/priModal.tpl.html',
-      controller: 'PrIModalController'
+      templateUrl: '/app/home/templates/privacyModal.tpl.html',
+      controller: 'privacyModalController'
     })
   }
 
-  showSeC(){
+  showSecurity(){
     this.modal.open({
-      templateUrl: '/app/home/templates/secModal.tpl.html',
-      controller: 'SeCModalController'
+      templateUrl: '/app/home/templates/securityModal.tpl.html',
+      controller: 'securityModalController'
     })
   }
 
-  showSuP(){
+  showSupport(){
     this.modal.open({
-      templateUrl: '/app/home/templates/supModal.tpl.html',
-      controller: 'SuPModalController'
+      templateUrl: '/app/home/templates/supportModal.tpl.html',
+      controller: 'supportModalController'
     })
-    
   }
+
 }
 
 export default ConvertDocumentCtrl
 
 angular.module(name).controller('ConvertDocumentCtrl', [
+  '$uibModal',
   (...args) => {
     return new ConvertDocumentCtrl(...args);
   }
