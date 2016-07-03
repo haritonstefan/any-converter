@@ -12,12 +12,41 @@ class HomeController{
     this.modal = ModalService;
   }
 
-  show(){
+  showFaq(){
     this.modal.open({
-      templateUrl: '/app/home/templates/modal.tpl.html',
-      controller: 'FAQModalController'
+      templateUrl: '/app/home/templates/faqModal.tpl.html',
+      controller: 'faqModalController'
     })
   }
+
+  showTermsOfservice(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/termsOfserviceModal.tpl.html',
+      controller: 'termsOfserviceModalController'
+    })
+  }
+
+  showPrivacy(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/privacyModal.tpl.html',
+      controller: 'privacyModalController'
+    })
+  }
+
+  showSecurity(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/securityModal.tpl.html',
+      controller: 'securityModalController'
+    })
+  }
+
+  showSupport(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/supportModal.tpl.html',
+      controller: 'supportModalController'
+    })
+  }
+
 }
 
 export default HomeController

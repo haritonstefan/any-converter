@@ -8,14 +8,51 @@
 import name from '../name';
 
 class ConvertDocumentCtrl{
-  constructor() {
-  	
+  constructor(ModalService) {
+    this.modal = ModalService;
   }
+
+  showFaq(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/faqModal.tpl.html',
+      controller: 'faqModalController'
+    })
+  }
+
+  showTermsOfservice(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/termsOfserviceModal.tpl.html',
+      controller: 'termsOfserviceModalController'
+    })
+  }
+
+  showPrivacy(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/privacyModal.tpl.html',
+      controller: 'privacyModalController'
+    })
+  }
+
+  showSecurity(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/securityModal.tpl.html',
+      controller: 'securityModalController'
+    })
+  }
+
+  showSupport(){
+    this.modal.open({
+      templateUrl: '/app/home/templates/supportModal.tpl.html',
+      controller: 'supportModalController'
+    })
+  }
+
 }
 
 export default ConvertDocumentCtrl
 
 angular.module(name).controller('ConvertDocumentCtrl', [
+  '$uibModal',
   (...args) => {
     return new ConvertDocumentCtrl(...args);
   }

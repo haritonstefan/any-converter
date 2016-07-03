@@ -3,4 +3,8 @@
  */
 
 import './HomeController';
-import './modals/FAQModalController';
+import './modals/faqModalController';
+import './modals/privacyModalController';
+import './modals/securityModalController';
+import './modals/supportModalController';
+import './modals/termsOfserviceModalController';
