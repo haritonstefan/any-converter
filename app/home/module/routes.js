@@ -7,6 +7,11 @@ import moduleName from '../name';
 
 var routes = {
   'app': {
+    abstract: true,
+    template: '<div ui-view></div>',
+    'url': ''
+  },
+  'app.home': {
     url: '/',
     templateUrl: 'app/home/templates/home.tpl.html',
     controller: 'HomeController',
@@ -15,11 +20,12 @@ var routes = {
 };
 
 class Config {
-  constructor($stateProvider, $urlRouterProvider) {
+  constructor($stateProvider, $locationProvider) {
     console.log('routes');
     let stateNames = Object.keys(routes);
-    $urlRouterProvider.when('', '/');
-    // $urlRouterProvider.otherwise('/');
+
+    $locationProvider.html5Mode(true);
+
     angular.forEach(stateNames, (stateName) => {
       console.log('registering');
       $stateProvider.state(stateName, routes[stateName]);
@@ -29,7 +35,7 @@ class Config {
 
 angular.module(moduleName).config([
   '$stateProvider',
-  '$urlRouterProvider',
+  '$locationProvider',
   (...args) => {
     return new Config(...args);
   }

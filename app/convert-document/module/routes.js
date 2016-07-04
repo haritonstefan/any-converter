@@ -6,8 +6,8 @@
 import moduleName from '../name';
 
 var routes = {
-  'convert-document': {
-    url: 'convert/document',
+  'app.convert-document': {
+    url: '/convert/document',
     templateUrl: 'app/convert-document/templates/convert-document.tpl.html',
     controller: 'ConvertDocumentCtrl',
     controllerAs: 'DocConvCtrl'
@@ -15,11 +15,9 @@ var routes = {
 };
 
 class Config {
-  constructor($stateProvider, $urlRouterProvider) {
+  constructor($stateProvider) {
     console.log('routes');
     let stateNames = Object.keys(routes);
-    // $urlRouterProvider.when('', '/');
-    // $urlRouterProvider.otherwise('/');
     angular.forEach(stateNames, (stateName) => {
       console.log('registering');
       $stateProvider.state(stateName, routes[stateName]);

@@ -16,5 +16,9 @@ angular.module(moduleName, [
   'home',
   'convert-document',
   'ui.bootstrap',
-  'angular-loading-bar',
+  'angular-loading-bar'
 ]);
+
+angular.module(moduleName).run(['$rootScope', ($rootScope) => {
+  $rootScope.$on("$stateChangeError", console.log.bind(console));
+}]);
