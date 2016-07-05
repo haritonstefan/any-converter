@@ -8,6 +8,7 @@
     <meta name="keywords" content="Free, Easy, Convert, Document, Image, Audio">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="app/css/style.css"/>
+    <script src="jspm_packages/npm/file-saver@1.3.2/FileSaver.min.js"></script>
 </head>
 <body>
     <div ng-app="any-convert">
@@ -17,7 +18,12 @@
     <script src="jspm_packages/system.js"></script>
     <script src="jspm.config.js"></script>
     <script>
-        System.import('app/index');
+        var localHosts = ['localhost', '127.0.0.1'];
+        if (localHosts.indexOf(window.location.hostname) == -1) {
+            System.import('build/index');
+        } else {
+            System.import('app/index');
+        }
     </script>
 </body>
 </html>
