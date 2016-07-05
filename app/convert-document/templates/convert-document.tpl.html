@@ -25,7 +25,7 @@
 	        <div class="insert-thumb">
 
 	            <div class="box">
-					<input type="file" name="file[]" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+					<input ngf-select="DocConvCtrl.selectFile($files)" type="file" name="file" id="file" class="inputfile"/>
 					<label for="file">
 						<span></span> 
 						<strong>
@@ -46,22 +46,16 @@
 
         <div class="square col-sm-3">
 			<div>
-				<label>from:</label>
-				<select>
-					<option value="pdf">PDF</option>
-					<option value="doc">DOC</option>
-					<option value="word">Word</option>
+				<label for="from">from:</label>
+				<select id="from" ng-options="extension.value as extension.caption for extension in DocConvCtrl.documentFormats" ng-model="DocConvCtrl.from">
 				</select>
 			</div>
 		</div>
 
 		<div class="square col-sm-3">
 			<div>
-				<label>to:</label>
-				<select class="doctype">
-					<option value="pdf">PDF</option>
-					<option value="doc">DOC</option>
-					<option value="word">Word</option>
+				<label for="to">to:</label>
+				<select id="to" ng-options="extension.value as extension.caption for extension in DocConvCtrl.documentFormats" ng-model="DocConvCtrl.to">
 				</select>
 			</div>
 		</div>
@@ -71,7 +65,7 @@
             
     <!-- convert button -->
     <div class="square col-sm-12">
-        <button class="convert">convert</button>
+        <button class="convert" ng-click="DocConvCtrl.convert()">convert</button>
     </div>
 
     <!-- advertise -->

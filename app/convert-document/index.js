@@ -3,4 +3,5 @@
  */
 
 import './module/index';
+import './services/index';
 import './controllers/index';

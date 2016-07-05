@@ -8,8 +8,25 @@
 import name from '../name';
 
 class ConvertDocumentCtrl{
-  constructor(ModalService) {
-    this.modal = ModalService;
+  constructor(documentFormats, modalService, documentConverterService) {
+    this.documentFormats = documentFormats;
+    this.modal = modalService;
+    this.service = documentConverterService;
+  }
+
+  convert() {
+    let fd = new FormData();
+    fd.set('file', this.file);
+    fd.set('from', this.from);
+    fd.set('to', this.to);
+    this.service.convert(fd).then((response) => {
+      var blob = new Blob([new Uint8Array(response.data.file.data)], {type: `${response.data.type}`});
+      saveAs(blob, response.data.fileName);
+    })
+  }
+  
+  selectFile(files) {
+    this.file = files[0];
   }
 
   showFaq(){
@@ -52,7 +69,9 @@ class ConvertDocumentCtrl{
 export default ConvertDocumentCtrl
 
 angular.module(name).controller('ConvertDocumentCtrl', [
+  'documentFormats',
   '$uibModal',
+  'documentConverterService',
   (...args) => {
     return new ConvertDocumentCtrl(...args);
   }
