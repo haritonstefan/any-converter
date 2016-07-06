@@ -25,13 +25,17 @@
 	        <div class="insert-thumb">
 
 	            <div class="box">
-					<input ngf-select="DocConvCtrl.selectFile($files)" type="file" name="file" id="file" class="inputfile"/>
+					<input ngf-select="DocConvCtrl.selectFile($files)" type="file" name="file" id="file" ng-click="showme=true" class="inputfile"/>
 					<label for="file">
-						<span></span> 
 						<strong>
 							<img src="app/img/adddoc.png"> Choose a file&hellip;
 						</strong>
 					</label>
+					<div ng-show="showme">
+						<hr/>
+						<p class="col-sm-6">NAME:  {{DocConvCtrl.file.name}}</p>
+						<p class="col-sm-6">SIZE:  {{DocConvCtrl.file.size}} bytes</p>
+					</div>
 				</div> 
 
 	        </div>
@@ -42,25 +46,15 @@
 
 	<!-- choose type box -->
     <div class="row">
-        <div class="col-sm-3"></div>
+        <div class="col-sm-4"></div>
 
-        <div class="square col-sm-3">
-			<div>
-				<label for="from">from:</label>
-				<select id="from" ng-options="extension.value as extension.caption for extension in DocConvCtrl.documentFormats" ng-model="DocConvCtrl.from">
-				</select>
-			</div>
+		<div class="square col-sm-4">
+			<p>Convert to:</p>
+			<select id="to" ng-options="extension.value as extension.caption for extension in DocConvCtrl.documentFormats" ng-model="DocConvCtrl.to">
+			</select>
 		</div>
 
-		<div class="square col-sm-3">
-			<div>
-				<label for="to">to:</label>
-				<select id="to" ng-options="extension.value as extension.caption for extension in DocConvCtrl.documentFormats" ng-model="DocConvCtrl.to">
-				</select>
-			</div>
-		</div>
-
-		<div class="col-sm-3"></div>
+		<div class="col-sm-"></div>
 	</div>
             
     <!-- convert button -->
