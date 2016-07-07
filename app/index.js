@@ -9,6 +9,7 @@ import 'angular-ui/bootstrap-bower';
 import 'angular-loading-bar';
 import 'ng-file-upload';
 import 'angular-ui/ui-select';
+import 'angular-sanitize';
 import 'css';
 import './home/index';
 import './convert-document/index';
@@ -21,7 +22,8 @@ angular.module(moduleName, [
   'ui.bootstrap',
   'angular-loading-bar',
   'ngFileUpload',
-  'ui.select'
+  'ui.select',
+  'ngSanitize'
 ]);
 
 angular.module(moduleName).constant('rootApi', config.rootApi);

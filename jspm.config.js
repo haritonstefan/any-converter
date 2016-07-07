@@ -14,9 +14,10 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.5.6",
+    "angular": "github:angular/bower-angular@1.5.7",
     "angular-bootstrap": "github:angular-ui/bootstrap-bower@1.3.3",
     "angular-loading-bar": "github:chieffancypants/angular-loading-bar@0.9.0",
+    "angular-sanitize": "github:angular/bower-angular-sanitize@1.5.7",
     "angular-ui-router": "github:angular-ui/angular-ui-router-bower@0.3.1",
     "angular-ui/bootstrap-bower": "github:angular-ui/bootstrap-bower@1.3.3",
     "angular-ui/ui-select": "github:angular-ui/ui-select@0.18.0",
@@ -27,7 +28,10 @@ System.config({
     "file-saver": "npm:file-saver@1.3.2",
     "ng-file-upload": "npm:ng-file-upload@12.0.4",
     "github:angular-ui/angular-ui-router-bower@0.3.1": {
-      "angular": "github:angular/bower-angular@1.5.6"
+      "angular": "github:angular/bower-angular@1.5.7"
+    },
+    "github:angular/bower-angular-sanitize@1.5.7": {
+      "angular": "github:angular/bower-angular@1.5.7"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
