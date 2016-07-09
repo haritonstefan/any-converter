@@ -50,8 +50,15 @@
 
 		<div class="square col-sm-4">
 			<p>Convert to:</p>
-			<select id="to" ng-options="extension.value as extension.caption for extension in DocConvCtrl.documentFormats" ng-model="DocConvCtrl.to">
-			</select>
+			
+			<ui-select ng-model="DocConvCtrl.to">
+			    <ui-select-match>
+			        <span ng-bind="$select.selected.caption"></span>
+			    </ui-select-match>
+			    <ui-select-choices repeat="extension.value as extension in (DocConvCtrl.documentFormats | filter: $select.search) track by extension.value">
+			        <span ng-bind="extension.caption"></span>
+			    </ui-select-choices>
+			</ui-select>
 		</div>
 
 		<div class="col-sm-4"></div>
