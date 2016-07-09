@@ -1,3 +1,8 @@
 module.exports = {
-  "rootApi": 'http://localhost:8080'
+  "prod": {
+    "rootApi": 'http://46.101.226.53'
+  },
+  "dev": {
+    "rootApi": 'http://localhost:8080'
+  }
 };
