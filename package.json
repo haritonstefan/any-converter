@@ -15,6 +15,7 @@
       "angular-bootstrap": "github:angular-ui/bootstrap-bower@^1.3.3",
       "angular-loading-bar": "github:chieffancypants/angular-loading-bar@^0.9.0",
       "angular-ui-router": "github:angular-ui/angular-ui-router-bower@^0.3.1",
+      "angular-ui/ui-select": "github:angular-ui/ui-select@^0.18.0",
       "css": "github:systemjs/plugin-css@^0.1.23",
       "file-saver": "npm:file-saver@^1.3.2",
       "ng-file-upload": "npm:ng-file-upload@^12.0.4"

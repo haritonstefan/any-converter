@@ -19,12 +19,16 @@ System.config({
     "angular-loading-bar": "github:chieffancypants/angular-loading-bar@0.9.0",
     "angular-ui-router": "github:angular-ui/angular-ui-router-bower@0.3.1",
     "angular-ui/bootstrap-bower": "github:angular-ui/bootstrap-bower@1.3.3",
+    "angular-ui/ui-select": "github:angular-ui/ui-select@0.18.0",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.23",
     "file-saver": "npm:file-saver@1.3.2",
     "ng-file-upload": "npm:ng-file-upload@12.0.4",
+    "github:angular-ui/angular-ui-router-bower@0.3.1": {
+      "angular": "github:angular/bower-angular@1.5.6"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },

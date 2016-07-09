@@ -8,6 +8,7 @@ import 'angular-bootstrap';
 import 'angular-ui/bootstrap-bower';
 import 'angular-loading-bar';
 import 'ng-file-upload';
+import 'angular-ui/ui-select';
 import 'css';
 import './home/index';
 import './convert-document/index';
@@ -19,7 +20,8 @@ angular.module(moduleName, [
   'convert-document',
   'ui.bootstrap',
   'angular-loading-bar',
-  'ngFileUpload'
+  'ngFileUpload',
+  'ui.select'
 ]);
 
 angular.module(moduleName).constant('rootApi', config.rootApi);
