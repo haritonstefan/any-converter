@@ -16,10 +16,8 @@ var routes = {
 
 class Config {
   constructor($stateProvider) {
-    console.log('routes');
     let stateNames = Object.keys(routes);
     angular.forEach(stateNames, (stateName) => {
-      console.log('registering');
       $stateProvider.state(stateName, routes[stateName]);
     });
   }
