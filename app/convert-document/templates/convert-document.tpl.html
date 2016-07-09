@@ -36,7 +36,12 @@
 	        <div class="insert-thumb">
 
 	            <div class="box">
-					<input ngf-select="DocConvCtrl.selectFile($files)" type="file" name="file" id="file" ng-click="showme=true" class="inputfile"/>
+					<input
+							ngf-select="DocConvCtrl.selectFile($files)"
+							ngf-pattern="DocConvCtrl.documentPattern"
+							nfg-max-size="20Mb"
+							type="file" name="file" id="file" ng-click="showme=true"
+							class="inputfile"/>
 					<label for="file">
 						<strong>
 							<img src="app/img/adddoc.png"> Choose a file&hellip;

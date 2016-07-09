@@ -8,7 +8,8 @@
 import name from '../name';
 
 class ConvertDocumentCtrl{
-  constructor(documentFormats, modalService, documentConverterService) {
+  constructor(documentFormats, documentPattern, modalService, documentConverterService) {
+    this.documentPattern = documentPattern;
     this.documentFormats = documentFormats;
     this.modal = modalService;
     this.service = documentConverterService;
@@ -63,6 +64,7 @@ export default ConvertDocumentCtrl
 
 angular.module(name).controller('ConvertDocumentCtrl', [
   'documentFormats',
+  'documentPattern',
   '$uibModal',
   'documentConverterService',
   (...args) => {
