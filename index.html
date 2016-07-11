@@ -19,13 +19,14 @@
     <script src="jspm_packages/system.js"></script>
     <script src="jspm.config.js"></script>
     <script>
+        Window.env = "prod";
+        System.import('app/index');
         var localHosts = ['localhost', '127.0.0.1'];
         if (localHosts.indexOf(window.location.hostname) == -1) {
             Window.env = "prod";
             System.import('build/index');
         } else {
             Window.env = "dev";
-            System.import('app/index');
         }
     </script>
 </body>
