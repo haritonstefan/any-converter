@@ -8,7 +8,8 @@
 import name from '../name';
 
 class ConvertDocumentCtrl{
-  constructor(documentFormats, modalService, documentConverterService) {
+  constructor(documentFormats, documentPattern, modalService, documentConverterService) {
+    this.documentPattern = documentPattern;
     this.documentFormats = documentFormats;
     this.modal = modalService;
     this.service = documentConverterService;
@@ -50,17 +51,10 @@ class ConvertDocumentCtrl{
     })
   }
 
-  showSecurity(){
+  showContact(){
     this.modal.open({
-      templateUrl: '/app/home/templates/securityModal.tpl.html',
-      controller: 'securityModalController'
-    })
-  }
-
-  showSupport(){
-    this.modal.open({
-      templateUrl: '/app/home/templates/supportModal.tpl.html',
-      controller: 'supportModalController'
+      templateUrl: '/app/home/templates/contactModal.tpl.html',
+      controller: 'contactModalController'
     })
   }
 
@@ -70,6 +64,7 @@ export default ConvertDocumentCtrl
 
 angular.module(name).controller('ConvertDocumentCtrl', [
   'documentFormats',
+  'documentPattern',
   '$uibModal',
   'documentConverterService',
   (...args) => {

@@ -3,33 +3,31 @@
 <!-- -->
 
 <div class="container">
+    
+    <h1>Any Converter</h1>
+    <p>Convert any file easy, free and fast from one format to another!</p>
+
+    <!-- advertise -->
     <div class="row">
-        <h1>Any Converter</h1>
+        <div class="col-sm-4"></div>
+        <div class="hideDes square col-sm-4">
+            <div class="ad-thumb">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
 
-        <!-- advertise -->
-        <div class="hideRes square col-sm-4">
-            <div class="ad-thumb">
-            </div>
-        </div>
-        <div class="hideRes square col-sm-4">
-            <div class="ad-thumb">
-            </div>
-        </div>
+    <div class="row">
+        <!-- not active -->
         <div class="square col-sm-4">
-            <div class="ad-thumb">
-            </div>
-        </div>
-
-        <!-- not active link -->
-        <div class="square col-sm-4">
-            <div class="not-active-thumb">
+            <div class="not-active-thumb hideMob">
                 <img src="app/img/image.png" alt="Convert Image">
-                    <h3>image</h3>
-                    <h6>Coming soon...</h6>
-                </div>
+                <h3>image</h3>
+                <h6>Coming soon...</h6>
             </div>
+        </div>
 
-        <!-- document link -->
+        <!-- not active -->
         <div class="square col-sm-4">
             <a ui-sref="app.convert-document">
                 <div class="square-thumb">
@@ -39,29 +37,84 @@
             </a>
         </div>
 
-        <!-- not active link -->
+        <!-- not active -->
         <div class="square col-sm-4">
-            <div class="not-active-thumb">
+            <div class="not-active-thumb hideMob">
                 <img src="app/img/audio.png" alt="Convert Audio">
                 <h3>audio</h3>
                 <h6>Coming soon...</h6>
             </div>
         </div>
 
-        <!-- advertise -->
+    </div>
+
+    <div class="row">
+        <!-- not active -->
+        <div class="square col-sm-4">
+            <div class="not-active-thumb hideMob">
+                <img src="app/img/archive.png" alt="Convert Archive">
+                <h3>archive</h3>
+                <h6>Coming soon...</h6>
+            </div>
+        </div>
+
+        <!-- document link -->
+        <div class="square col-sm-4">
+            <div class="not-active-thumb hideMob">
+                <img src="app/img/ebook.png" alt="Convert Ebook">
+                <h3>ebook</h3>
+                <h6>Coming soon...</h6>
+            </div>
+        </div>
+
+        <!-- not active -->
+        <div class="square col-sm-4">
+            <div class="not-active-thumb hideMob">
+                <img src="app/img/video.png" alt="Convert Video">
+                <h3>video</h3>
+                <h6>Coming soon...</h6>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- why us thumb -->
+    <div class="row">
+        <h2>why us?</h2>
+        <div class="col-sm-3">
+            <h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> convenience</h4>
+            <p>- No software to download!<br/>Just select your file, pick a format to convert to and away you go.</p>
+        </div>
+        <div class="col-sm-3">
+            <h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> speed</h4>
+            <p>- We aim to complete all our conversions in under 10 minutes.</p>
+        </div>
+        <div class="col-sm-3">
+            <h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> formats</h4>
+            <p>- We support 14+ file formats.</p>
+        </div>
+        <div class="col-sm-3">
+            <h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> support</h4>
+            <p>- Got a file you can't convert ? Just email us and we'll ask our dedicated engineers to take a look for you.</p>
+        </div>    
+    </div>
+
+    <!-- advertise -->
+    <div class="row">
         <div class="square col-sm-4">
             <div class="ad-thumb">
             </div>
         </div>
-        <div class="hideRes square col-sm-4">
+        <div class="hideMob square col-sm-4">
             <div class="ad-thumb">
             </div>
         </div>
-        <div class="hideRes square col-sm-4">
+        <div class="hideMob square col-sm-4">
             <div class="ad-thumb">
             </div>
         </div>
     </div>
+  
 </div>
 
 <!-- footer -->
@@ -72,8 +125,7 @@
                 <li><a ng-click="HomeCtrl.showFaq()">faq</a></li>
                 <li><a ng-click="HomeCtrl.showTermsOfservice()">terms of service</a></li>
                 <li><a ng-click="HomeCtrl.showPrivacy()">privacy</a></li>
-                <li><a ng-click="HomeCtrl.showSecurity()">security</a></li>
-                <li><a ng-click="HomeCtrl.showSupport()">support</a></li>
+                <li><a ng-click="HomeCtrl.showContact()">contact</a></li>
             </ul>
         </div>
     </div>

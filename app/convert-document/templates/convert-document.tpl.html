@@ -4,6 +4,7 @@
 
 <div class="container">
 	<h1>Document Converter</h1>
+	<p>Just follow these simple steps below!</p>
 
 	<!-- advertise -->
 	<div class="row">
@@ -19,13 +20,28 @@
 
 	<!-- insert box -->
 	<div class="row">
+	<div class="col-sm-2"></div>
+		<div class="col-sm-8 steps">
+		<h2>step 1</h2>
+		<p>Select your file</p>
+		<hr>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	<div class="row">
 		<div class="col-sm-2"></div>
 
 		<div class="square col-sm-8">
 	        <div class="insert-thumb">
 
 	            <div class="box">
-					<input ngf-select="DocConvCtrl.selectFile($files)" type="file" name="file" id="file" ng-click="showme=true" class="inputfile"/>
+					<input
+							ngf-select="DocConvCtrl.selectFile($files)"
+							ngf-pattern="DocConvCtrl.documentPattern"
+							nfg-max-size="20Mb"
+							type="file" name="file" id="file" ng-click="showme=true"
+							class="inputfile"/>
 					<label for="file">
 						<strong>
 							<img src="app/img/adddoc.png"> Choose a file&hellip;
@@ -33,7 +49,7 @@
 					</label>
 					<div ng-show="showme">
 						<hr/>
-						<p class="col-sm-6">NAME:  {{DocConvCtrl.file.name}}</p>
+						<p class="col-sm-6">NAME:  {{ DocConvCtrl.file.name}}</p>
 						<p class="col-sm-6">SIZE:  {{ ((DocConvCtrl.file.size)/1000).toFixed(2) }} KB</p>
 					</div>
 				</div> 
@@ -45,6 +61,16 @@
 	</div>
 
 	<!-- choose type box -->
+	<div class="row">
+	<div class="col-sm-2"></div>
+		<div class="col-sm-8 steps">
+		<h2>step 2</h2>
+		<p>Choose format convert to</p>
+		<hr>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
     <div class="row">
         <div class="col-sm-4"></div>
 
@@ -65,9 +91,21 @@
 	</div>
             
     <!-- convert button -->
-    <div class="square col-sm-12">
-        <button class="convert" ng-click="DocConvCtrl.convert()">convert</button>
-    </div>
+    <div class="row">
+	<div class="col-sm-2"></div>
+		<div class="col-sm-8 steps">
+		<h2>step 3</h2>
+		<p>Convert you file by click on button</p>
+		<hr>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+    <div>
+	    <div class="square col-sm-12">
+	        <button class="convert" ng-click="DocConvCtrl.convert()">convert</button>
+	    </div>
+	</div>
 
     <!-- advertise -->
     <div class="row">
@@ -95,8 +133,7 @@
                 <li><a ng-click="DocConvCtrl.showFaq()">faq</a></li>
 				<li><a ng-click="DocConvCtrl.showTermsOfservice()">terms of service</a></li>
                 <li><a ng-click="DocConvCtrl.showPrivacy()">privacy</a></li>
-                <li><a ng-click="DocConvCtrl.showSecurity()">security</a></li>
-                <li><a ng-click="DocConvCtrl.showSupport()">support</a></li>
+                <li><a ng-click="DocConvCtrl.showContact()">contact</a></li>
             </ul>
         </div>
     </div>

@@ -15,7 +15,6 @@ class documentConverterService {
     }
 
     convert(params) {
-        console.log(params.values().next());
         return this.$http.post(`${this.rootApi}/document`, params);
     }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir build && find . -name '*.tpl.html' -and -name '*.css' | cpio -updm build/ && jspm bundle app/index.js build/index.js --minify"
+    "build": "rm -rf build && mkdir build && find ./app -name '*.tpl.html' | cpio -updm build/ && find ./app -name '*.css' | cpio -updm build/ && jspm bundle app/index.js build/index.js --minify --inject"
   },
   "author": "",
   "license": "ISC",

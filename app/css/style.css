@@ -30,6 +30,20 @@ h1 {
     font-weight: 550;
 }
 
+h4 {
+    color: #1E8BC3;
+}
+
+p {
+    text-transform: none;
+    font-size: 15px;
+    color: #3b3b3b;
+}
+
+hr {
+    border-color: #1E8BC3;
+}
+
 /************ main Page ************************/
 
 .square {
@@ -86,6 +100,10 @@ a {
 }
 
 /************ doc Page *************************/
+
+.steps {
+    text-align: left;
+}
 
 /* advertise thumb */
 .adv-thumb {
@@ -299,10 +317,20 @@ footer li a:hover {
 }
 
 /************ responsivenes ********************/
+@media only screen and (min-width: 767px){
+
+    .hideDes {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 767px){
 
-    .hideRes {
+    p, h2 {
+        padding-bottom: 20px;
+    }
+
+    .hideMob {
         display: none;
     }
 

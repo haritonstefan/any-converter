@@ -33,17 +33,10 @@ class HomeController{
     })
   }
 
-  showSecurity(){
+  showContact(){
     this.modal.open({
-      templateUrl: '/app/home/templates/securityModal.tpl.html',
-      controller: 'securityModalController'
-    })
-  }
-
-  showSupport(){
-    this.modal.open({
-      templateUrl: '/app/home/templates/supportModal.tpl.html',
-      controller: 'supportModalController'
+      templateUrl: '/app/home/templates/contactModal.tpl.html',
+      controller: 'contactModalController'
     })
   }
 

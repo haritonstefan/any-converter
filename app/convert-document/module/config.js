@@ -10,6 +10,20 @@ class Config{
   }
 }
 
+angular.module(moduleName).constant('documentPattern',
+    'application/pdf,' +
+    'text/*,' +
+    'image/*,' +
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document,' +
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.template,' +
+    'application/msword,' +
+    'application/vnd.palm,' +
+    'application/rtf,' +
+    'application/vnd.stardivision.writer,' +
+    'application/vnd.sun.xml.writer.template,' +
+    'application/vnd.oasis.opendocument.text'
+);
+
 angular.module(moduleName).config([
   (...args) => {
     return new Config(...args);

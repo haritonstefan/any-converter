@@ -21,13 +21,11 @@ var routes = {
 
 class Config {
   constructor($stateProvider, $locationProvider) {
-    console.log('routes');
     let stateNames = Object.keys(routes);
 
     $locationProvider.html5Mode(true);
 
     angular.forEach(stateNames, (stateName) => {
-      console.log('registering');
       $stateProvider.state(stateName, routes[stateName]);
     });
   }

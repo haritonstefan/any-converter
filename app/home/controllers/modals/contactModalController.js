@@ -7,16 +7,16 @@
 
 import name from '../../name';
 
-class supportModalController{
+class contactModalController{
     constructor(close) {
         this.close = close
     }
 }
 
-export default supportModalController
+export default contactModalController
 
-angular.module(name).controller('supportModalController', [
+angular.module(name).controller('contactModalController', [
     (...args) => {
-        return new supportModalController(...args);
+        return new contactModalController(...args);
     }
 ]);

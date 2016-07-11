@@ -14,7 +14,7 @@ import 'css';
 import './home/index';
 import './convert-document/index';
 import moduleName from './name';
-import config from '../config.js';
+import config from './config.js';
 
 angular.module(moduleName, [
   'home',
@@ -26,7 +26,7 @@ angular.module(moduleName, [
   'ngSanitize'
 ]);
 
-angular.module(moduleName).constant('rootApi', config.rootApi);
+angular.module(moduleName).constant('rootApi', config[Window.env]["rootApi"]);
 
 angular.module(moduleName).run(['$rootScope', ($rootScope) => {
   $rootScope.$on("$stateChangeError", console.log.bind(console));
