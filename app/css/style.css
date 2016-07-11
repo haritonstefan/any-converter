@@ -317,6 +317,12 @@ footer li a:hover {
 }
 
 /************ responsivenes ********************/
+@media only screen and (min-width: 767px){
+
+    .hideDes {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 767px){
 
@@ -324,7 +330,7 @@ footer li a:hover {
         padding-bottom: 20px;
     }
 
-    .hideRes {
+    .hideMob {
         display: none;
     }
 
