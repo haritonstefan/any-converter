@@ -26,7 +26,6 @@ body {
 h1 {
     font-size: 45px;
     color: #3b3b3b
-    letter-spacing: 2px;
     font-weight: 550;
 }
 
@@ -48,13 +47,6 @@ hr {
 
 .square {
     margin: 20px 0px 20px 0px;
-}
-
-/* advertise thumb */
-.ad-thumb {
-    position: relative;
-    height: 200px;
-    background-color: #ffffff;
 }
 
 /* not active thumb */
@@ -106,9 +98,11 @@ a {
 }
 
 /* advertise thumb */
-.adv-thumb {
+.advertisment {
     position: relative;
-    height: 100px;
+    height: 90px;
+    width: 728px;
+    margin: auto;
     background-color: #ffffff;
 }
 
@@ -251,15 +245,22 @@ a {
     color: #1E8BC3;
 }
 
+/************ quote ************************/
+
+.quote p {
+    text-align: right;
+    color: #c94778;
+}
+
 /************ footer ***************************/
 
 footer ul {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 footer ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     cursor:pointer;
 }
 
@@ -269,6 +270,12 @@ footer li a {
 
 footer li a:hover {
     color: #1E8BC3;
+}
+
+.rights ul li {
+    padding: 0px;
+    font-size: 11px;
+    text-transform: none;
 }
 
 /************ modals ***************************/
@@ -298,6 +305,12 @@ footer li a:hover {
 .modal-body p {
     color: #3b3b3b;
     text-transform: none;
+    text-align: left;
+}
+
+.modal-body h5 {
+    padding: 10px;
+    border-bottom: 1px solid #1E8BC3;
 }
 
 .modal-footer {
@@ -316,13 +329,11 @@ footer li a:hover {
     color: #ffffff;
 }
 
-/************ responsivenes ********************/
-@media only screen and (min-width: 767px){
-
-    .hideDes {
-        display: none;
-    }
+.aboutRight {
+    text-align: right !important;
 }
+
+/************ responsivenes ********************/
 
 @media only screen and (max-width: 767px){
 
@@ -340,6 +351,11 @@ footer li a:hover {
 
     .box label span {
         min-height: 30px;
+    }
+
+    .advertisment {
+        width: auto;
+        height: 100px;
     }
 }
 

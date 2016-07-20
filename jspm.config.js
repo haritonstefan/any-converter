@@ -8,7 +8,7 @@ System.config({
       "optimisation.modules.system"
     ]
   },
-  paths: {  
+  paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
@@ -19,11 +19,11 @@ System.config({
       "app/name.js",
       "app/convert-document/index.js",
       "app/convert-document/controllers/index.js",
-      "app/home/controllers/modals/termsOfserviceModalController.js",
+      "app/home/controllers/modals/termsOfuseModalController.js",
       "app/home/name.js",
       "npm:babel-runtime@5.8.38/helpers/bind.js",
       "npm:babel-runtime@5.8.38/helpers/class-call-check.js",
-      "app/home/controllers/modals/contactModalController.js",
+      "app/home/controllers/modals/aboutusModalController.js",
       "app/home/controllers/modals/privacyModalController.js",
       "app/home/controllers/modals/faqModalController.js",
       "app/convert-document/controllers/DocumentConvertController.js",

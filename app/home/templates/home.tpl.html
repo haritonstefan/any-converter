@@ -7,14 +7,15 @@
     <h1>Any Converter</h1>
     <p>Convert any file easy, free and fast from one format to another!</p>
 
-    <!-- advertise -->
+    <!-- quote -->
     <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="hideDes square col-sm-4">
-            <div class="ad-thumb">
-            </div>
+        <div class="col-sm-7"></div>
+
+        <div class="col-sm-5 quote">
+            <br/>
+            <p><em>“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”</em> </p>
+            <p>― Albert Einstein</p>
         </div>
-        <div class="col-sm-4"></div>
     </div>
 
     <div class="row">
@@ -27,7 +28,7 @@
             </div>
         </div>
 
-        <!-- not active -->
+        <!-- document link -->
         <div class="square col-sm-4">
             <a ui-sref="app.convert-document">
                 <div class="square-thumb">
@@ -58,7 +59,7 @@
             </div>
         </div>
 
-        <!-- document link -->
+        <!-- not active -->
         <div class="square col-sm-4">
             <div class="not-active-thumb hideMob">
                 <img src="app/img/ebook.png" alt="Convert Ebook">
@@ -78,7 +79,7 @@
 
     </div>
 
-    <!-- why us thumb -->
+    <!-- why-us thumb -->
     <div class="row">
         <h2>why us?</h2>
         <div class="col-sm-3">
@@ -98,22 +99,6 @@
             <p>- Got a file you can't convert ? Just email us and we'll ask our dedicated engineers to take a look for you.</p>
         </div>    
     </div>
-
-    <!-- advertise -->
-    <div class="row">
-        <div class="square col-sm-4">
-            <div class="ad-thumb">
-            </div>
-        </div>
-        <div class="hideMob square col-sm-4">
-            <div class="ad-thumb">
-            </div>
-        </div>
-        <div class="hideMob square col-sm-4">
-            <div class="ad-thumb">
-            </div>
-        </div>
-    </div>
   
 </div>
 
@@ -123,9 +108,16 @@
         <div class="col-sm-12">
             <ul>
                 <li><a ng-click="HomeCtrl.showFaq()">faq</a></li>
-                <li><a ng-click="HomeCtrl.showTermsOfservice()">terms of service</a></li>
-                <li><a ng-click="HomeCtrl.showPrivacy()">privacy</a></li>
-                <li><a ng-click="HomeCtrl.showContact()">contact</a></li>
+                <li><a ng-click="HomeCtrl.showTermsOfuse()">terms of use</a></li>
+                <li><a ng-click="HomeCtrl.showPrivacy()">privacy policy</a></li>
+                <li><a ng-click="HomeCtrl.showAboutUs()">about us</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 rights">
+            <ul>
+                <li>&#169; 2016 Any-Converter</li>
+                <li>|</li>
+                <li>All rights reserved.</li>
             </ul>
         </div>
     </div>
