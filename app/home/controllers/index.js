@@ -5,5 +5,5 @@
 import './HomeController';
 import './modals/faqModalController';
 import './modals/privacyModalController';
-import './modals/contactModalController';
-import './modals/termsOfserviceModalController';
+import './modals/aboutusModalController';
+import './modals/termsOfuseModalController';

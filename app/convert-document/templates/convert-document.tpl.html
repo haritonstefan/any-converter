@@ -6,12 +6,23 @@
 	<h1>Document Converter</h1>
 	<p>Just follow these simple steps below!</p>
 
+	<!-- quote -->
+    <div class="row">
+        <div class="col-sm-7"></div>
+
+        <div class="col-sm-5 quote">
+            <br/>
+            <p><em>"The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence."</em> </p>
+            <p>― Nikola Tesla</p>
+        </div>
+    </div>
+    
 	<!-- advertise -->
 	<div class="row">
 		<div class="col-sm-2"></div>
 
 		<div class="square col-sm-8">
-	        <div class="adv-thumb">
+	        <div class="advertisment">
 	        </div>
 	    </div>
 
@@ -50,7 +61,8 @@
 					<div ng-show="showme">
 						<hr/>
 						<p class="col-sm-6">NAME:  {{ DocConvCtrl.file.name}}</p>
-						<p class="col-sm-6">SIZE:  {{ ((DocConvCtrl.file.size)/1000).toFixed(2) }} KB</p>
+						<p class="col-sm-6">
+						SIZE:  {{ ((DocConvCtrl.file.size)/1000).toFixed(2) }} KB</p>
 					</div>
 				</div> 
 
@@ -112,7 +124,7 @@
 		<div class="col-sm-2"></div>
 
 		<div class="square col-sm-8">
-	        <div class="adv-thumb">
+	        <div class="advertisment">
 	        </div>
 	    </div>
 
@@ -131,9 +143,16 @@
         <div class="col-sm-12">
             <ul>
                 <li><a ng-click="DocConvCtrl.showFaq()">faq</a></li>
-				<li><a ng-click="DocConvCtrl.showTermsOfservice()">terms of service</a></li>
-                <li><a ng-click="DocConvCtrl.showPrivacy()">privacy</a></li>
-                <li><a ng-click="DocConvCtrl.showContact()">contact</a></li>
+				<li><a ng-click="DocConvCtrl.showTermsOfuse()">terms of use</a></li>
+                <li><a ng-click="DocConvCtrl.showPrivacy()">privacy policy</a></li>
+                <li><a ng-click="DocConvCtrl.showAboutUs()">about us</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 rights">
+        	<ul>
+            	<li>&#169; 2016 Any-Converter</li>
+            	<li>|</li>
+            	<li>All rights reserved.</li>
             </ul>
         </div>
     </div>

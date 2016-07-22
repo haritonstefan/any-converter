@@ -19,10 +19,10 @@ class HomeController{
     })
   }
 
-  showTermsOfservice(){
+  showTermsOfuse(){
     this.modal.open({
-      templateUrl: '/app/home/templates/termsOfserviceModal.tpl.html',
-      controller: 'termsOfserviceModalController'
+      templateUrl: '/app/home/templates/termsOfuseModal.tpl.html',
+      controller: 'termsOfuseModalController'
     })
   }
 
@@ -33,10 +33,10 @@ class HomeController{
     })
   }
 
-  showContact(){
+  showAboutUs(){
     this.modal.open({
-      templateUrl: '/app/home/templates/contactModal.tpl.html',
-      controller: 'contactModalController'
+      templateUrl: '/app/home/templates/aboutusModal.tpl.html',
+      controller: 'aboutusModalController'
     })
   }
 
