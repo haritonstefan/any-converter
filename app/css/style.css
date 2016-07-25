@@ -231,6 +231,26 @@ a {
     color: #3b3b3b;
 }
 
+/* format table */
+caption {
+    font-size: 30px;
+    color: #3b3b3b;
+}
+
+table {
+    text-transform: none;
+}
+
+td, th {
+    border: 1px solid #1E8BC3;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #cfcfcf;
+}
+
 /* back link */
 .back {
     background-color: #3b3b3b;
