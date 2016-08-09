@@ -17,6 +17,9 @@ class ConvertDocumentCtrl{
 
   convert() {
     let fd = new FormData();
+    if (fd.set === undefined) {
+      fd.set = fd.append;
+    }
     fd.set('file', this.file);
     fd.set('from', this.from);
     fd.set('to', this.to);

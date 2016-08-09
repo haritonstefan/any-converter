@@ -12,25 +12,22 @@
     <script src="jspm_packages/npm/file-saver@1.3.2/FileSaver.min.js"></script>
 </head>
 <body>
-    <div ng-app="any-convert">
-        <div ui-view></div>
-    </div>
+<div ng-app="any-convert">
+    <div ui-view></div>
+</div>
 
-    <script src="jspm_packages/system.js"></script>
-    <script src="jspm.config.js"></script>
-    <script>
-
+<script src="jspm_packages/system.js"></script>
+<script src="jspm.config.js"></script>
+<script>
+    Window.env = "prod";
+    System.import('app/index');
+    var localHosts = ['localhost', '127.0.0.1'];
+    if (localHosts.indexOf(window.location.hostname) == -1) {
         Window.env = "prod";
-        System.import('app/index');
-//        var localHosts = ['localhost', '127.0.0.1'];
-//
-//        if (localHosts.indexOf(window.location.hostname) == -1) {
-//            Window.env = "prod";
-//            System.import('build/index');
-//        } else {
-//            Window.env = "dev";
-//            System.import('app/index');
-//        }
-    </script>
+        System.import('build/index');
+    } else {
+        Window.env = "dev";
+    }
+</script>
 </body>
 </html>
