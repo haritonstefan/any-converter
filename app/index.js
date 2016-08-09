@@ -26,7 +26,7 @@ angular.module(moduleName, [
   'ngSanitize'
 ]);
 
-angular.module(moduleName).constant('rootApi', config[Window.env]["rootApi"]);
+angular.module(moduleName).constant('rootApi', config[window.env]["rootApi"]);
 
 angular.module(moduleName).run(['$rootScope', ($rootScope) => {
   $rootScope.$on("$stateChangeError", console.log.bind(console));

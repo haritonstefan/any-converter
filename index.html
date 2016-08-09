@@ -19,14 +19,24 @@
 <script src="jspm_packages/system.js"></script>
 <script src="jspm.config.js"></script>
 <script>
-    Window.env = "prod";
+    /** Remove powered by pubstorm **/
+    document.onreadystatechange = function() {
+                var el = document.querySelector("a[href='https://www.pubstorm.com/?utm_source=pubstorm&utm_medium=watermark&utm_campaign=watermark']");
+                if (el !== null) {
+                    var body = document.querySelector('body');
+                    body.removeChild(el);
+                }
+            };
+    /** endof removed **/
+
+    window.env = "prod";
     System.import('app/index');
     var localHosts = ['localhost', '127.0.0.1'];
     if (localHosts.indexOf(window.location.hostname) == -1) {
-        Window.env = "prod";
+        window.env = "prod";
         System.import('build/index');
     } else {
-        Window.env = "dev";
+        window.env = "dev";
     }
 </script>
 </body>
