@@ -83,6 +83,7 @@ System.config({
   map: {
     "angular": "github:angular/bower-angular@1.5.7",
     "angular-bootstrap": "github:angular-ui/bootstrap-bower@1.3.3",
+    "angular-google-analytics": "npm:angular-google-analytics@1.1.7",
     "angular-loading-bar": "github:chieffancypants/angular-loading-bar@0.9.0",
     "angular-sanitize": "github:angular/bower-angular-sanitize@1.5.7",
     "angular-ui-router": "github:angular-ui/angular-ui-router-bower@0.3.1",
@@ -117,6 +118,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "npm:angular-google-analytics@1.1.7": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
