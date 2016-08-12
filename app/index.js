@@ -6,10 +6,10 @@ import 'angular';
 import 'angular-ui-router';
 import 'angular-bootstrap';
 import 'angular-ui/bootstrap-bower';
-import 'angular-loading-bar';
 import 'ng-file-upload';
 import 'angular-ui/ui-select';
-import 'angular-sanitize';
+import 'angulartics';
+import 'angulartics-google-analytics';
 import 'css';
 import './home/index';
 import './convert-document/index';
@@ -20,10 +20,10 @@ angular.module(moduleName, [
   'home',
   'convert-document',
   'ui.bootstrap',
-  'angular-loading-bar',
   'ngFileUpload',
   'ui.select',
-  'ngSanitize'
+  'angulartics',
+  'angulartics.google.analytics'
 ]);
 
 angular.module(moduleName).constant('rootApi', config[window.env]["rootApi"]);
